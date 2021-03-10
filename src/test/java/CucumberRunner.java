@@ -7,6 +7,4 @@ import org.junit.runner.RunWith;
         glue = {"com.quinbay.bliblitravel"} , tags = "@TrainticketBookingAutomation or @TrainticketBookingAutomationfortwoway",
         features = "src/test/resources/features")
 
-public class CucumberRunner {
-
-}
+public class CucumberRunner {}

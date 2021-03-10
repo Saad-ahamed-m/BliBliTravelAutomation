@@ -12,7 +12,7 @@ public class Selenium {
     public WebDriver driver;
     public Selenium() throws InterruptedException
     {
-        System.setProperty("webdriver.chrome.driver","/Users/saadahamed/Downloads/BlibliTravel/src/test/resources/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver","/Users/saadahamed/Desktop/Projects/UIAutomation/BlibliTravel/src/test/resources/driver/chromedriver");
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("profile.default_content_setting_values.notifications", 2);
         ChromeOptions options = new ChromeOptions();
