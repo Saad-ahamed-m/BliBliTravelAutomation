@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class MyStepdefs {
     Selenium s;
     String date,startdate,enddate;
-    LinkedHashMap <String,String> mainmap,trainselmap,customermap,passengermap,finalpassengermap;
+    LinkedHashMap <String,String> mainmap;
     Select salutation;
     @Given("The user is on Blibli website")
     public void theUserIsOnBlibliWebsite() throws InterruptedException {
@@ -71,7 +71,6 @@ public class MyStepdefs {
     @And("User verifies the details of the travel in the train selection page")
     public void userVerifiesTheDetailsOfTheTravelInTheTrainSelectionPage() throws InterruptedException {
         Thread.sleep(5000);
-        trainselmap=new LinkedHashMap<>();
         Assert.assertEquals(mainmap.get("source"),((ChromeDriver)s.driver).findElementByXPath("//div[@class='route__departure-city']").getText());
         System.out.println("The source is asserted in train selection page!");
         Assert.assertEquals(mainmap.get("destination"),((ChromeDriver)s.driver).findElementByXPath("//div[@class='route__arrival-city']").getText());
